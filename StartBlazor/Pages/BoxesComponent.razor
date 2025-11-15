@@ -1,0 +1,14 @@
+﻿@foreach (var item in Titles)
+{
+	<div class="border border-2 border-danger p-3 m-3">
+		<h3>@item</h3>
+		<p>this is component for test in development area</p>
+	</div>
+}
+
+
+@code{
+
+	[Parameter]
+	public List<string> Titles { get; set; } = [];
+}

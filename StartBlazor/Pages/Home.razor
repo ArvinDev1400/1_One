@@ -1,0 +1,30 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+
+
+<InputText @bind-Value="TestBind" />
+
+
+<br />
+@TestBind
+
+
+<BoxComponent Title="Title 1"/>
+<BoxComponent Title="Title 2"/>
+<BoxComponent Title="title 3"/>
+<BoxComponent Title="title 4" />
+<BoxComponent Title="title 5" />
+
+
+<BoxesComponent Titles="@(["arvin","rahmanian","nakhostin"])" />
+
+
+@code{
+	public string TestBind { get; set; }
+}
